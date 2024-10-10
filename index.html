@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TechOverflow - Empowering Digital Excellence</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-900 text-white">
+
+<!-- Navbar Section -->
+ <!-- Navbar Section -->
+ <nav class="flex justify-between items-center bg-gray-900 p-4 sticky top-0 z-50 shadow-lg transition-all duration-300 ease-in-out">
+  <div class="flex items-center w-full justify-between">
+      <a href="#hero" class="ml-4">
+          <img src="images/logo.png" alt="TechOverflow Logo" class="w-36">
+      </a>
+      <button class="toggle-button md:hidden bg-transparent border-none text-white text-3xl" id="toggle-button">
+          &#9776; <!-- Hamburger Icon -->
+      </button>
+      <ul class="nav-links hidden md:flex space-x-8 ml-auto mr-4">
+          <li><a href="#about-us" class="text-white transition duration-300 hover:text-blue-400 hover:underline">About Us</  a></li>
+          <li><a href="#services" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Services</a></li>
+          <li><a href="#portfolio" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Portfolio</a></li>
+          <li><a href="#testimonials" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Testimonials</a></li>
+          <li><a href="#contact" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Contact</a></li>
+      </ul>
+  </div>
+  <!-- Mobile Menu -->
+  <ul class="mobile-nav hidden flex-col items-start w-full bg-gray-800 absolute left-0 top-full mt-2 md:hidden" id="mobile-menu">
+      <li><a href="#about-us" class="text-white transition duration-300 hover:text-blue-400 hover:underline">About Us</a></li>
+      <li><a href="#services" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Services</a></li>
+      <li><a href="#portfolio" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Portfolio</a></li>
+      <li><a href="#testimonials" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Testimonials</a></li>
+      <li><a href="#contact" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- Hero Section -->
+  <header id="hero"
+    class="flex items-center justify-center text-center h-[90vh] bg-gradient-to-b from-gray-900 to-gray-700 text-white relative">
+    <div class="absolute inset-0 bg-[url('images/hero.jpg')] bg-cover bg-center bg-no-repeat opacity-55"></div>
+    <div class="hero-content relative z-10 px-4">
+      <h1 class="text-4xl md:text-6xl tracking-wide font-bold hero-title">Empowering Digital Excellence</h1>
+      <p class="mt-8 text-lg md:text-2xl hero-subtitle">TechOverflow delivers innovative software and IT solutions to
+        take your business to new heights.</p>
+      <a href="#services"
+        class="mt-6 inline-block bg-blue-500 text-white py-2 px-6 rounded transition duration-300 hover:bg-blue-600">Explore
+        Our Services</a>
+    </div>
+  </header>
+
+  <!-- About Us Section -->
+  <section id="about-us" class="py-16 text-center bg-gray-900 fade-in">
+    <h2 class="text-3xl mb-8">About Us</h2>
+    <div class="flex flex-wrap justify-center px-4">
+      <div
+        class="bg-gray-800 rounded-lg p-6 m-4 w-full max-w-xs shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer fade-in">
+        <h3 class="text-xl">Who We Are</h3>
+        <p>TechOverflow is a leading IT solutions provider specializing in Blockchain, Web, and Mobile App development.
+          Our mission is to drive digital transformation with cutting-edge technologies.</p>
+      </div>
+      <div
+        class="bg-gray-800 rounded-lg p-6 m-4 w-full max-w-xs shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer fade-in">
+        <h3 class="text-xl">Our Mission</h3>
+        <p>We aim to empower businesses through innovative software solutions that improve efficiency, scalability, and
+          growth. Our solutions are tailored to meet the unique needs of each client.</p>
+      </div>
+      <div
+        class="bg-gray-800 rounded-lg p-6 m-4 w-full max-w-xs shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer fade-in">
+        <h3 class="text-xl">Our Vision</h3>
+        <p>Our vision is to become a trusted global leader in IT services by consistently delivering exceptional value
+          through innovation, technology, and expertise.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-gray-900 text-center fade-in">
+    <h2 class="text-3xl mb-8">Our Services</h2>
+    <div class="flex flex-wrap justify-center px-4">
+      <div
+        class="bg-gray-800 rounded-lg p-6 m-4 w-full max-w-xs shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer fade-in">
+        <img src="images/Blo.jpg" alt="Blockchain Development" class="rounded mb-4">
+        <h3 class="text-xl">Blockchain Development</h3>
+        <p>Secure, scalable, and decentralized blockchain solutions for modern enterprises.</p>
+      </div>
+      <div
+        class="bg-gray-800 rounded-lg p-6 m-4 w-full max-w-xs shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer fade-in">
+        <img src="images/webdev.png" alt="Web Development" class="rounded mb-4">
+        <h3 class="text-xl">Web Development</h3>
+        <p>Fast, responsive, and extensible websites to give your business a cutting-edge online presence.</p>
+      </div>
+      <div
+        class="bg-gray-800 rounded-lg p-6 m-4 w-full max-w-xs shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer fade-in">
+        <img src="images/mobdev.png" alt="Mobile App Development" class="rounded mb-4">
+        <h3 class="text-xl">Mobile App Development</h3>
+        <p>Custom mobile applications designed for both iOS and Android platforms.</p>
+      </div>
+      <div
+        class="bg-gray-800 rounded-lg p-6 m-4 w-full max-w-xs shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer fade-in">
+        <img src="images/seo.png" alt="SEO and Digital Marketing" class="rounded mb-4">
+        <h3 class="text-xl">SEO & Digital Marketing</h3>
+        <p>Boost your online visibility with targeted SEO strategies and comprehensive marketing solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-16 bg-gray-900 text-center fade-in">
+    <h2 class="text-3xl mb-8">Our Work</h2>
+    <div class="flex flex-wrap justify-center px-4">
+      <div
+        class="bg-gray-800 rounded-lg p-6 m-4 w-full max-w-xs shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer fade-in">
+        <img src="images/tricktok.jpg" alt="Project 1" class="rounded mb-4">
+        <h3 class="text-xl">TrickTok</h3>
+        <p>Automation, ChatBot, React</p>
+      </div>
+      <div
+        class="bg-gray-800 rounded-lg p-6 m-4 w-full max-w-xs shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer fade-in">
+        <img src="images/hyperropes.jpg" alt="Project 2" class="rounded mb-4">
+        <h3 class="text-xl">Hyper Ropes</h3>
+        <p>CMS, Ecommerce, WordPress</p>
+      </div>
+      <div
+        class="bg-gray-800 rounded-lg p-6 m-4 w-full max-w-xs shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer fade-in">
+        <img src="images/tft.png" alt="Project 3" class="rounded mb-4">
+        <h3 class="text-xl">TFT Trainings</h3>
+        <p>IT solutions, React, Web Development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" aria-label="What our customers are saying" class="bg-gray-900 py-16 sm:py-24 fade-in">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl md:text-center">
+        <h2 class="font-display text-3xl tracking-tight text-white sm:text-4xl">We value the quality of our
+          relationships as much as the quality of our code.</h2>
+      </div>
+      <ul role="list"
+        class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+        <li>
+          <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+            <li>
+              <figure
+                class="relative rounded-2xl bg-gray-800 p-6 shadow-lg shadow-gray-700 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                <blockquote class="relative">
+                  <p class="text-lg tracking-tight text-white">TechOverflow has transformed our business operations. The
+                    quality of service and dedication to our success is unparalleled.</p>
+                </blockquote>
+                <figcaption
+                  class="relative mt-6 flex items-center justify-between border-t border-gray-600 pt-6 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                  <div>
+                    <div class="font-display text-base text-white">Sheryl Berge</div>
+                  </div>
+                  <div class="overflow-hidden rounded-full bg-gray-700">
+                    <img alt="" class="h-14 w-14 object-cover" style="color:transparent"
+                      src="https://randomuser.me/api/portraits/men/15.jpg">
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+            <li>
+              <figure
+                class="relative rounded-2xl bg-gray-800 p-6 shadow-lg shadow-gray-700 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                <blockquote class="relative">
+                  <p class="text-lg tracking-tight text-white">Their team was professional and innovative. They
+                    delivered a top-notch solution that exceeded our expectations!</p>
+                </blockquote>
+                <figcaption
+                  class="relative mt-6 flex items-center justify-between border-t border-gray-600 pt-6 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                  <div>
+                    <div class="font-display text-base text-white">Leland Kiehn</div>
+                  </div>
+                  <div class="overflow-hidden rounded-full bg-gray-700">
+                    <img alt="" class="h-14 w-14 object-cover" style="color:transparent"
+                      src="https://randomuser.me/api/portraits/women/15.jpg">
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+            <li>
+              <figure
+                class="relative rounded-2xl bg-gray-800 p-6 shadow-lg shadow-gray-700 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                <blockquote class="relative">
+                  <p class="text-lg tracking-tight text-white">I was impressed by their attention to detail and
+                    commitment. The project was delivered on time and with exceptional quality.</p>
+                </blockquote>
+                <figcaption
+                  class="relative mt-6 flex items-center justify-between border-t border-gray-600 pt-6 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                  <div>
+                    <div class="font-display text-base text-white">Peter Renolds</div>
+                  </div>
+                  <div class="overflow-hidden rounded-full bg-gray-700">
+                    <img alt="" class="h-14 w-14 object-cover" style="color:transparent"
+                      src="https://randomuser.me/api/portraits/men/10.jpg">
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="bg-gray-900 text-center py-16">
+    <h2 class="text-3xl mb-8">Get in Touch</h2>
+    <form id="contactForm" class="max-w-lg mx-auto">
+      <input type="text" id="name" name="name" placeholder="Your Name"
+        class="block w-full p-4 mb-4 rounded-lg bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring focus:ring-blue-500"
+        required>
+      <input type="email" id="email" name="email" placeholder="Your Email"
+        class="block w-full p-4 mb-4 rounded-lg bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring focus:ring-blue-500"
+        required>
+      <textarea id="message" name="message" placeholder="Your Message"
+        class="block w-full p-4 mb-4 rounded-lg bg-gray-800 text-white border border-gray-600 focus:outline-none focus:ring focus:ring-blue-500"
+        required></textarea>
+      <button type="submit"
+        class="bg-blue-500 text-white py-2 px-4 rounded transition duration-300 hover:bg-blue-600">Send Message</button>
+    </form>
+  </section>
+
+
+
+
+  <footer class="bg-gray-900 text-center py-4">
+    <p>&copy; 2024 TechOverflow | Empowering Digital Excellence</p>
+  </footer>
+
+  <script src="script.js">
+  </script>
+</body>
+
+</html>
