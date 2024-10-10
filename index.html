@@ -14,33 +14,46 @@
 
 <body class="bg-gray-900 text-white">
 
-<!-- Navbar Section -->
- <!-- Navbar Section -->
- <nav class="flex justify-between items-center bg-gray-900 p-4 sticky top-0 z-50 shadow-lg transition-all duration-300 ease-in-out">
-  <div class="flex items-center w-full justify-between">
+  <!-- Navbar Section -->
+  <!-- Navbar Section -->
+  <nav
+    class="flex justify-between items-center bg-gray-900 p-4 sticky top-0 z-50 shadow-lg transition-all duration-300 ease-in-out">
+    <div class="flex items-center w-full justify-between">
       <a href="#hero" class="ml-4">
-          <img src="images/logo.png" alt="TechOverflow Logo" class="w-36">
+        <img src="images/logo.png" alt="TechOverflow Logo" class="w-36">
       </a>
       <button class="toggle-button md:hidden bg-transparent border-none text-white text-3xl" id="toggle-button">
-          &#9776; <!-- Hamburger Icon -->
+        &#9776; <!-- Hamburger Icon -->
       </button>
       <ul class="nav-links hidden md:flex space-x-8 ml-auto mr-4">
-          <li><a href="#about-us" class="text-white transition duration-300 hover:text-blue-400 hover:underline">About Us</  a></li>
-          <li><a href="#services" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Services</a></li>
-          <li><a href="#portfolio" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Portfolio</a></li>
-          <li><a href="#testimonials" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Testimonials</a></li>
-          <li><a href="#contact" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Contact</a></li>
+        <li><a href="#about-us" class="text-white transition duration-300 hover:text-blue-400 hover:underline">About
+            Us</a>
+        </li>
+        <li><a href="#services"
+            class="text-white transition duration-300 hover:text-blue-400 hover:underline">Services</a></li>
+        <li><a href="#portfolio"
+            class="text-white transition duration-300 hover:text-blue-400 hover:underline">Portfolio</a></li>
+        <li><a href="#testimonials"
+            class="text-white transition duration-300 hover:text-blue-400 hover:underline">Testimonials</a></li>
+        <li><a href="#contact"
+            class="text-white transition duration-300 hover:text-blue-400 hover:underline">Contact</a></li>
       </ul>
-  </div>
-  <!-- Mobile Menu -->
-  <ul class="mobile-nav hidden flex-col items-start w-full bg-gray-800 absolute left-0 top-full mt-2 md:hidden" id="mobile-menu">
-      <li><a href="#about-us" class="text-white transition duration-300 hover:text-blue-400 hover:underline">About Us</a></li>
-      <li><a href="#services" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Services</a></li>
-      <li><a href="#portfolio" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Portfolio</a></li>
-      <li><a href="#testimonials" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Testimonials</a></li>
-      <li><a href="#contact" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Contact</a></li>
-  </ul>
-</nav>
+    </div>
+    <!-- Mobile Menu -->
+    <ul class="mobile-nav hidden flex-col items-start w-full bg-gray-800 absolute left-0 top-full mt-2 md:hidden"
+      id="mobile-menu">
+      <li><a href="#about-us" class="text-white transition duration-300 hover:text-blue-400 hover:underline">About
+          Us</a></li>
+      <li><a href="#services"
+          class="text-white transition duration-300 hover:text-blue-400 hover:underline">Services</a></li>
+      <li><a href="#portfolio"
+          class="text-white transition duration-300 hover:text-blue-400 hover:underline">Portfolio</a></li>
+      <li><a href="#testimonials"
+          class="text-white transition duration-300 hover:text-blue-400 hover:underline">Testimonials</a></li>
+      <li><a href="#contact" class="text-white transition duration-300 hover:text-blue-400 hover:underline">Contact</a>
+      </li>
+    </ul>
+  </nav>
 
   <!-- Hero Section -->
   <header id="hero"
@@ -141,19 +154,18 @@
   <section id="testimonials" aria-label="What our customers are saying" class="bg-gray-900 py-16 sm:py-24 fade-in">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-2xl md:text-center">
-        <h2 class="font-display text-3xl tracking-tight text-white sm:text-4xl">We value the quality of our
+        <h2 class="font-display text-3xl sm:text-4xl text-white tracking-tight">We value the quality of our
           relationships as much as the quality of our code.</h2>
       </div>
-      <ul role="list"
-        class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+      <ul role="list" class="mx-auto mt-16 grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-3 lg:mt-20 lg:max-w-none">
         <li>
           <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
             <li>
               <figure
-                class="relative rounded-2xl bg-gray-800 p-6 shadow-lg shadow-gray-700 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                class="relative rounded-2xl bg-gray-800 p-6 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer">
                 <blockquote class="relative">
-                  <p class="text-lg tracking-tight text-white">TechOverflow has transformed our business operations. The
-                    quality of service and dedication to our success is unparalleled.</p>
+                  <p class="text-lg sm:text-xl tracking-tight text-white">TechOverflow has transformed our business
+                    operations. The quality of service and dedication to our success is unparalleled.</p>
                 </blockquote>
                 <figcaption
                   class="relative mt-6 flex items-center justify-between border-t border-gray-600 pt-6 transition-transform duration-300 hover:scale-105 cursor-pointer">
@@ -173,10 +185,10 @@
           <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
             <li>
               <figure
-                class="relative rounded-2xl bg-gray-800 p-6 shadow-lg shadow-gray-700 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                class="relative rounded-2xl bg-gray-800 p-6 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer">
                 <blockquote class="relative">
-                  <p class="text-lg tracking-tight text-white">Their team was professional and innovative. They
-                    delivered a top-notch solution that exceeded our expectations!</p>
+                  <p class="text-lg sm:text-xl tracking-tight text-white">Their team was professional and innovative.
+                    They delivered a top-notch solution that exceeded our expectations!</p>
                 </blockquote>
                 <figcaption
                   class="relative mt-6 flex items-center justify-between border-t border-gray-600 pt-6 transition-transform duration-300 hover:scale-105 cursor-pointer">
@@ -196,10 +208,10 @@
           <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
             <li>
               <figure
-                class="relative rounded-2xl bg-gray-800 p-6 shadow-lg shadow-gray-700 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                class="relative rounded-2xl bg-gray-800 p-6 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer">
                 <blockquote class="relative">
-                  <p class="text-lg tracking-tight text-white">I was impressed by their attention to detail and
-                    commitment. The project was delivered on time and with exceptional quality.</p>
+                  <p class="text-lg sm:text-xl tracking-tight text-white">I was impressed by their attention to detail
+                    and commitment. The project was delivered on time and with exceptional quality.</p>
                 </blockquote>
                 <figcaption
                   class="relative mt-6 flex items-center justify-between border-t border-gray-600 pt-6 transition-transform duration-300 hover:scale-105 cursor-pointer">
@@ -220,6 +232,7 @@
   </section>
 
   <!-- Contact Form Section -->
+  <!-- Contact Form Section -->
   <section id="contact" class="bg-gray-900 text-center py-16">
     <h2 class="text-3xl mb-8">Get in Touch</h2>
     <form id="contactForm" class="max-w-lg mx-auto">
@@ -237,12 +250,10 @@
     </form>
   </section>
 
-
-
-
   <footer class="bg-gray-900 text-center py-4">
     <p>&copy; 2024 TechOverflow | Empowering Digital Excellence</p>
   </footer>
+
 
   <script src="script.js">
   </script>
